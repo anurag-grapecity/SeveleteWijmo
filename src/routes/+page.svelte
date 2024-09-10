@@ -2,7 +2,6 @@
   import "@mescius/wijmo.styles/wijmo.css";
   import { FlexGrid } from "@mescius/wijmo.grid";
   import { onMount } from "svelte";
-
   var countries: Array<string> = "US,Germany,UK,Japan,Italy,Greece".split(",");
   var data: Array<{
     id: number;
@@ -48,6 +47,7 @@
 </div>
 
 <style>
+  @import "@mescius/wijmo.styles/themes/wijmo.theme.material.css";
   .grid-container {
     max-height: 250px;
     width: fit-content;
